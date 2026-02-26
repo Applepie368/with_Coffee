@@ -1,6 +1,5 @@
-💿 파이썬 함수의 기본 구조
-
 # 2026.02.26 (목)
+💿 파이썬 함수의 기본 구조
 
   "일반적인 함수"
  
@@ -40,5 +39,31 @@
       print("HI")
 
     say()  ->  입력값을 받는 매개변수, 결과값을 돌려주는 return도 없어서 그냥 함수 자체를 사용하면 됨
+
+
+
   
+💿 추가 사항
+
+  "입력값이 여러개일 때"
+    -> 매개 변수 앞에 *을 입력하기!
+
+    def add(*manyNumb):
+      result = 0
+      for i in manyNumb:
+        result += i
+      return result
+
+    test1 = add(1, 2, 3, 4,5)
+    print(test1)   ->    이러면 1, 2, 3, 4, 5가 모두 매개변수 manyNumb로 들어가가고 for에 의해 순차적으로 반복하여 모든 수를 더함! -> 답은 15~
+
+
+  "keyword parameter"
+    -> 매개 변수 앞에 **를 붙여서 만듦
+    -> 받은 값을 모두 딕셔너리로 만들어서 출력
+
+    def test(**kwargs):
+      print(kwargs)
+
+    test(a=1) -> {"a": 1}이라는 딕셔너리로 됨
     
