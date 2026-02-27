@@ -63,3 +63,27 @@ end = "\n"을 넣었다
 \과 n이 합쳐져 특별문자가 되는데, 이 특수문자가 "" 안에 넣어줘야 특수문자로 인식되고 실행된다고 한다.
 
 그래서 위의 괄호에 f.write("\n") 이 맞는 거였다 휴...
+
+
+
+<✏️세번째>
+
+이건 나 잘한거다 ㅎㅎ
+
+f = open("/Users/사용자명/Desktop/test.txt", "r")
+body =  1️⃣ 파일 내용 저장
+f.close()
+
+body = 2️⃣ icecream을 donut으로 변경
+
+f = open("/Users/사용자명/Desktop/test.txt", 3️⃣) 쓰기 모드로 실행
+f.write(body)
+f.close()
+
+이건데, 파일 내용을 read로 저장할까 readlines로 저장할까 고민했다
+근데 밑에 icecream을 donut으로 바꾸라고 하는데, 이게 문자열 함수인 .replace() 로 바꾸면 될 것 같아서, 
+리스트로 뽑아내는 readlines()가 아니라 read()를 쓰면 좋을 것 같다고 판단했다
+
+그리고 2번에 바로 body.replace("icecream", "donut")으로 딱~~ 문자열이니까 문제 생기지 않게 따옴표도 잊지 않고 기록까지~~
+
+뭐 쉬울 수도 있다고 생각하겠지만, 그래도 꽤 잘한 것 같아서 좋았다 ㅎㅎ
